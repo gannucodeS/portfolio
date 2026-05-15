@@ -821,15 +821,15 @@ const style = `
     .footer { flex-direction: column; text-align: center; padding: 32px 28px; }
     .about-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .hero-scroll { left: 28px; }
-    .btn-primary, .btn-outline, .nav-resume { transform: scale(0.5); transform-origin: left center; }
-    .hero-ctas .btn-primary, .hero-ctas .btn-outline { transform-origin: top center; }
+    .nav-resume { display: inline-block; margin-right: 16px; padding: 6px 10px; }
+    .btn-primary, .btn-outline { padding: 7px 18px; }
   }
   @media (max-width: 480px) {
     .hero-title { font-size: 3.2rem; }
     .section-title { font-size: 2.8rem; }
     .about-stats { grid-template-columns: repeat(2, 1fr); }
     .hero-ctas { flex-direction: column; }
-    .btn-primary, .btn-outline { text-align: center; transform: scale(0.5); transform-origin: top center; }
+    .btn-primary, .btn-outline { text-align: center; padding: 7px 18px; }
   }
 
   /* ANIMATIONS */
