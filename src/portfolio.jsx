@@ -140,14 +140,12 @@ const style = `
   }
   .nav-resume {
     font-family: var(--font-accent);
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: var(--white);
     background: var(--red);
     border: 1px solid var(--red);
-    padding: 8px 20px;
+    padding: 8px 14px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: none;
@@ -823,13 +821,15 @@ const style = `
     .footer { flex-direction: column; text-align: center; padding: 32px 28px; }
     .about-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .hero-scroll { left: 28px; }
+    .btn-primary, .btn-outline, .nav-resume { transform: scale(0.5); transform-origin: left center; }
+    .hero-ctas .btn-primary, .hero-ctas .btn-outline { transform-origin: top center; }
   }
   @media (max-width: 480px) {
     .hero-title { font-size: 3.2rem; }
     .section-title { font-size: 2.8rem; }
     .about-stats { grid-template-columns: repeat(2, 1fr); }
     .hero-ctas { flex-direction: column; }
-    .btn-primary, .btn-outline { text-align: center; }
+    .btn-primary, .btn-outline { text-align: center; transform: scale(0.5); transform-origin: top center; }
   }
 
   /* ANIMATIONS */
@@ -1075,7 +1075,7 @@ export default function Portfolio() {
           rel="noopener noreferrer" 
           className="nav-resume"
         >
-          Download Resume
+          ↓
         </a>
         <button className="nav-menu-btn" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           <span style={menuOpen ? { transform: "rotate(45deg) translate(4px, 4px)" } : {}} />
