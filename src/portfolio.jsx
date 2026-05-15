@@ -1075,7 +1075,7 @@ export default function Portfolio() {
           rel="noopener noreferrer" 
           className="nav-resume"
         >
-          ↓
+          ↓ Resume
         </a>
         <button className="nav-menu-btn" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           <span style={menuOpen ? { transform: "rotate(45deg) translate(4px, 4px)" } : {}} />
