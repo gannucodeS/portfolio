@@ -221,7 +221,7 @@ const style = `
     color: var(--white);
     text-transform: uppercase;
     opacity: 0;
-    animation: fadeUp 0.8s ease 0.5s forwards;
+    animation: slideInLeft 0.8s ease 0.5s forwards;
   }
   .hero-title .line-red { color: var(--red); display: block; }
   .hero-subtitle {
@@ -233,14 +233,14 @@ const style = `
     margin-top: 28px;
     max-width: 420px;
     opacity: 0;
-    animation: fadeUp 0.8s ease 0.7s forwards;
+    animation: slideInLeft 0.8s ease 0.7s forwards;
   }
   .hero-ctas {
     display: flex;
     gap: 20px;
     margin-top: 40px;
     opacity: 0;
-    animation: fadeUp 0.8s ease 0.9s forwards;
+    animation: slideInLeft 0.8s ease 0.9s forwards;
     flex-wrap: wrap;
   }
   .btn-primary {
@@ -387,6 +387,7 @@ const style = `
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 60px;
+    animation: slideInLeft 0.8s ease forwards;
   }
   .reveal {
     opacity: 0;
@@ -833,6 +834,10 @@ const style = `
   }
 
   /* ANIMATIONS */
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
