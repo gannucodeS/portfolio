@@ -827,7 +827,7 @@ const style = `
     .footer { flex-direction: column; text-align: center; padding: 32px 28px; }
     .about-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .hero-scroll { left: 28px; }
-    .nav-resume { display: inline-block; margin-right: 16px; padding: 6px 10px; }
+    .nav-resume { display: inline-block; margin-left: 30px; margin-right: 16px; padding: 6px 10px; }
     .btn-primary, .btn-outline { padding: 7px 18px; }
   }
   @media (max-width: 480px) {
