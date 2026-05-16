@@ -387,7 +387,6 @@ const style = `
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 60px;
-    animation: slideInLeft 0.8s ease forwards;
   }
   .reveal {
     opacity: 0;
@@ -397,6 +396,12 @@ const style = `
   .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  .reveal.slide-left {
+    transform: translateX(-60px);
+  }
+  .reveal.slide-left.visible {
+    transform: translateX(0);
   }
 
   /* ABOUT */
@@ -1165,7 +1170,7 @@ export default function Portfolio() {
       {/* ABOUT */}
       <section className="section about" id="about">
         <div className="section-inner">
-          <RevealBox>
+          <RevealBox className="slide-left">
             <p className="section-label">About</p>
             <h2 className="section-title">The Developer</h2>
           </RevealBox>
@@ -1227,7 +1232,7 @@ export default function Portfolio() {
       {/* PROJECTS */}
       <section className="section projects" id="projects">
         <div className="section-inner">
-          <RevealBox>
+          <RevealBox className="slide-left">
             <p className="section-label">Selected Work</p>
             <h2 className="section-title">Projects</h2>
           </RevealBox>
@@ -1258,7 +1263,7 @@ export default function Portfolio() {
       {/* SKILLS */}
       <section className="section skills" id="skills">
         <div className="section-inner">
-          <RevealBox>
+          <RevealBox className="slide-left">
             <p className="section-label">Capabilities</p>
             <h2 className="section-title">Skills</h2>
           </RevealBox>
@@ -1289,7 +1294,7 @@ export default function Portfolio() {
       {/* JOURNEY */}
       <section className="section journey" id="journey">
         <div className="section-inner">
-          <RevealBox>
+          <RevealBox className="slide-left">
             <p className="section-label">Timeline</p>
             <h2 className="section-title">Journey</h2>
           </RevealBox>
@@ -1312,7 +1317,7 @@ export default function Portfolio() {
       {/* CONTACT */}
       <section className="section contact" id="contact">
         <div className="section-inner">
-          <RevealBox>
+          <RevealBox className="slide-left">
             <p className="section-label">Get In Touch</p>
             <h2 className="section-title">Contact</h2>
           </RevealBox>
