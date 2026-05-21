@@ -811,6 +811,8 @@ const style = `
 
   /* MOBILE */
   @media (max-width: 900px) {
+    .cursor-dot, .cursor-ring, .cursor-glow { display: none; }
+    body { cursor: auto; }
     .navbar { padding: 20px 28px; }
     .navbar.scrolled { padding: 14px 28px; }
     .nav-links { display: none; }
