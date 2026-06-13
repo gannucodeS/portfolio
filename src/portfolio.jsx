@@ -1336,7 +1336,7 @@ export default function Portfolio() {
                   </div>
                   <div className="contact-info-item">
                     <span className="contact-info-label">Phone</span>
-                    <span className="contact-info-value">+91 8955813948</span>
+                    <span className="contact-info-value">+91 9783021436</span>
                   </div>
                   <div className="contact-info-item">
                     <span className="contact-info-label">Location</span>
